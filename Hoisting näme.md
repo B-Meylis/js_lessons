@@ -1,6 +1,6 @@
 ## Hoisting näme?
 
-**Hoisting** — bu JavaScript-de üýtgeýjileriň we funksiýalaryň (declarations) kod ýerine ýetirilmezden ozal scope-yň başyna “göterilmek” mehanizmidir.
+**Hoisting** — bu JavaScript-de üýtgeýjileriň we funksiýalaryň (declarations) kod ýerine ýetirilmezden ozal scope-yň başyna “göterilmek” mehanizmidir.  
 **Möhüm❗️** Göterilýäni diňe yglan edilenler(объявления), berlen bahalar (инициализации) däl! Şeýle-de kod hakykatda ýerini üýtgetmeýär — bu diňe ýerine ýetiriş kontekstiniň (execution context) döredilen wagtynda emele gelýän hereketdir.
 
 **Hoisting aslynda nähili işleýär**
