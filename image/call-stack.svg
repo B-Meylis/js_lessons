@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 400" width="100%" height="100%">
+
+  <style>
+    .bg { fill: #1e1e1e; }
+    .box { fill: #68b04d; stroke: #53943b; stroke-width: 2; rx: 4; }
+    .text-title { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #ffffff; text-anchor: middle; }
+    .arrow { stroke: #ffffff; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+  </style>
+
+  <!-- Определение стрелки -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ffffff" />
+    </marker>
+  </defs>
+
+  <rect width="100%" height="100%" class="bg" />
+
+  <!-- ШАГ 1 -->
+  <g transform="translate(40, 0)">
+    <rect x="0" y="280" width="220" height="70" class="box" />
+    <text x="110" y="312" class="text-title">Global Execution</text>
+    <text x="110" y="332" class="text-title">Context</text>
+  </g>
+
+  <!-- Стрелка 1 -> 2 -->
+  <path d="M 280 315 L 310 315 L 310 235 L 330 235" class="arrow" />
+
+  <!-- ШАГ 2 -->
+  <g transform="translate(350, 0)">
+    <rect x="0" y="200" width="220" height="70" class="box" />
+    <text x="110" y="232" class="text-title">First() Function</text>
+    <text x="110" y="252" class="text-title">Execution Context</text>
+
+    <rect x="0" y="280" width="220" height="70" class="box" />
+    <text x="110" y="312" class="text-title">Global Execution</text>
+    <text x="110" y="332" class="text-title">Context</text>
+  </g>
+
+  <path d="M 590 235 L 620 235 L 620 155 L 640 155" class="arrow" />
+
+  <g transform="translate(660, 0)">
+    <rect x="0" y="120" width="220" height="70" class="box" />
+    <text x="110" y="152" class="text-title">Second() Function</text>
+    <text x="110" y="172" class="text-title">Execution Context</text>
+
+    <rect x="0" y="200" width="220" height="70" class="box" />
+    <text x="110" y="232" class="text-title">First() Function</text>
+    <text x="110" y="252" class="text-title">Execution Context</text>
+
+    <rect x="0" y="280" width="220" height="70" class="box" />
+    <text x="110" y="312" class="text-title">Global Execution</text>
+    <text x="110" y="332" class="text-title">Context</text>
+  </g>
+
+  <path d="M 900 155 L 930 155 L 930 235 L 950 235" class="arrow" />
+
+  <g transform="translate(970, 0)">
+    <rect x="0" y="200" width="220" height="70" class="box" />
+    <text x="110" y="232" class="text-title">First() Function</text>
+    <text x="110" y="252" class="text-title">Execution Context</text>
+
+    <rect x="0" y="280" width="220" height="70" class="box" />
+    <text x="110" y="312" class="text-title">Global Execution</text>
+    <text x="110" y="332" class="text-title">Context</text>
+  </g>
+
+  <path d="M 1210 235 L 1240 235 L 1240 315 L 1260 315" class="arrow" />
+
+  
+  <g transform="translate(1280, 0)">
+    <rect x="0" y="280" width="220" height="70" class="box" />
+    <text x="110" y="312" class="text-title">Global Execution</text>
+    <text x="110" y="332" class="text-title">Context</text>
+  </g>
+</svg>
